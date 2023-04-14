@@ -8,7 +8,7 @@
 
 ## 1 - Primeiro Passo
 #### Abra o Power query.
-![alt text](./imagens_pbi/1.png)
+[![alt text](./imagens_pbi/1.png)]
 
 ## 2 - Segundo Passo
 #### Clique em Nova Fonte (Canto Superior esquerdo), seguida clique em mais.
