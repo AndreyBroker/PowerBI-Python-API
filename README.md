@@ -15,7 +15,6 @@ pip show pandas requests
 ```
 pip install pandas
 ```
-### Em seguinda:
 ```
 pip install requests
 ```
