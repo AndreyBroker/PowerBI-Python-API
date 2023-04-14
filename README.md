@@ -15,10 +15,10 @@ pip show pandas requests
 ```
 pip install pandas
 ```
+### Em seguinda:
 ```
 pip install requests
 ```
-
 
 
 ## 1 - Primeiro Passo
@@ -34,7 +34,7 @@ pip install requests
 #### Copie e Cole o Script python criado anteriormente e clique em ok.
 
 ## Final
-### Agora finalmente os dados da API não retornados!
+### Agora finalmente os dados da API São retornados!
 
-## Problemas
+## Possiveis problemas:
 ### Caso retorne vazio, tente rodar o programa no VSCode testando para ver se está tudo certo, caso o erro persista, tente retorna a API pura, sem realizar tratamentos no python.
