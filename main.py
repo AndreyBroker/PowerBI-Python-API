@@ -63,6 +63,6 @@ def extract_data_dfranquias(token, urls):
 tabelas = {"teste": url_teste}
 
 # defina o valor em uma variavel e print o valor
-df = extract_data_dfranquias(login(), tabelas)['items']
+df = extract_data_dfranquias(login(), tabelas)
 
 print(df)
