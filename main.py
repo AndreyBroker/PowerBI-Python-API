@@ -3,13 +3,19 @@ import pandas as pd
 import json
 
 
-usuario = "andreybroker02@gmail.com"
-senha = "redeioa"
-url_login = "https://api.dfranquias.com/v2/login_check"
-url_teste = "https://api.dfranquias.com/v2/franquias?count=50"
+# No lugar desta etapa coloque seus dados no lugar das variaveis
+with open('credenciais.json', 'r') as f:
+
+    dados = json.load(f)
+
+usuario = dados["login"]
+senha = dados["senha"]
+url_login = dados["url_login"]
+url_teste = dados["url_teste"]
 
 
 
+# Realize o login na API
 def login():
 
     header = {
@@ -30,7 +36,7 @@ def login():
 
     return token
 
-
+# Agora prepare os dados de uma forma que fique facil de manipular no Power Query
 def extract_data_dfranquias(token, urls):
 
     df = pd.DataFrame()
@@ -49,7 +55,7 @@ def extract_data_dfranquias(token, urls):
 
         data = json.loads ( my_string )
 
-    
+        # retorne um dataframe com o resultado obtido
 
         df = pd.DataFrame( data )
 
@@ -59,6 +65,7 @@ def extract_data_dfranquias(token, urls):
 
 tabelas = {"teste": url_teste}
 
-df = extract_data_dfranquias(login(), tabelas)
+# defina o valor em uma variavel e print o valor
+df = extract_data_dfranquias(login(), tabelas)['items']
 
 print(df)
