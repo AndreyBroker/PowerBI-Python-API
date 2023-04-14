@@ -3,15 +3,12 @@ import pandas as pd
 import json
 
 
-# No lugar desta etapa coloque seus dados no lugar das variaveis
-with open('credenciais.json', 'r') as f:
+# Coloque aqui suas informações
 
-    dados = json.load(f)
-
-usuario = dados["login"]
-senha = dados["senha"]
-url_login = dados["url_login"]
-url_teste = dados["url_teste"]
+usuario = "teste@gmail.com"
+senha = "12345"
+url_login = "https://api.login.com"
+url_teste = "https://api.teste.com"
 
 
 

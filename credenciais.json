@@ -1,6 +1,0 @@
-{
-    "login":"andreybroker02@gmail.com",
-    "senha": "redeioa",
-    "url_login": "https://api.dfranquias.com/v2/login_check",
-    "url_teste": "https://api.dfranquias.com/v2/franquias?count=50"
-}
