@@ -10,7 +10,7 @@
 pip show pandas requests
 ```
 
-### Caso não estaje realize os comando:
+### Caso não estaje realize os comandos:
 
 ```
 pip install pandas
